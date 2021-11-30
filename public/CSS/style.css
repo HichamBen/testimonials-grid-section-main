@@ -1,16 +1,20 @@
+* {
+    box-sizing: border-box;
+}
 body {
     margin: 0;
     background-color: hsl(210, 46%, 95%);
     font-family: 'Barlow Semi Condensed', sans-serif;
+    height: 875px;
+    width:1440px;
 }
 
 /* Make the section to be gird with 2 rows/ 4 columns*/
 section {
     width: 80%;
-    height: 875px;
-    margin: 10% 100px;
+    margin: 10%;
     display: grid;
-    grid-template: 40% 40%/ repeat(4, minmax(270px, 25%));
+    grid-template: auto auto/ repeat(4, minmax(270px, 25%));
     grid-gap: 25px;
 }
 
@@ -94,35 +98,62 @@ header {
 /* Determines margin and font weight of the text content in header */
 div>* {
     margin: 2px 0 0 20px;
+    font-size: 13px;
     font-weight: 500;
 
 }
 
 /* Determines font weight and size of paragraphs(Comments of persons) inside aside section*/
 aside>p {
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 600;
 
 }
 
+article {
+    font-size: 13px;
+}
 
 /* Change the formating of section(grid), and cells(main tag), 
 and align pattern-quotation icon when width is less or equal 374px*/
 @media screen and (max-width:374px) {
+    body{
+        width:374px;
+    }
     section {
-        width: 90%;
-        margin: 50px auto;
+        width:90%;
+        margin:15% 20px;
         display: block;
 
     }
 
     main {
-        width: 270px;
         margin-bottom: 25px;
     }
 
     svg {
         left: 210px;
+    }
+
+}
+
+@media screen and (max-width:480px) and (min-width:375px) {
+    body{
+        width:480px;
+    }
+    section {
+        width:90%;
+        margin:10% 20px;
+        display: block;
+
+    }
+
+    main {
+        margin-bottom: 25px;
+    }
+
+    svg {
+        left: 300px;
     }
 
 }
