@@ -12,7 +12,7 @@ body {
 /* Make the section to be gird with 2 rows/ 4 columns*/
 section {
     width: 80%;
-    margin: 10%;
+    margin: 12%;
     display: grid;
     grid-template: auto auto/ repeat(4, minmax(270px, 25%));
     grid-gap: 25px;
@@ -23,6 +23,7 @@ section {
 main {
     padding: 30px;
     border-radius: 15px;
+    box-shadow: 5px 5px 15px hsl(217, 19%, 35%);
 }
 
 
