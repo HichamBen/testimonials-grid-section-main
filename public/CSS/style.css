@@ -9,8 +9,8 @@ body {
     width:1440px;
 }
 
-/* Make the section to be gird with 2 rows/ 4 columns*/
-section {
+/* Make the main to be gird with 2 rows/ 4 columns*/
+main {
     width: 80%;
     margin: 12%;
     display: grid;
@@ -20,8 +20,8 @@ section {
 
 
 /*Formating all cells*/
-main {
-    padding: 30px;
+section {
+    padding: 25px;
     border-radius: 15px;
     box-shadow: 5px 5px 15px hsl(217, 19%, 35%);
 }
@@ -42,11 +42,14 @@ svg {
     left: 65%;
 }
 
-.daniel>aside {
+.daniel .aside {
     position: relative;
     z-index: 1;
 }
 
+.aside {
+    padding-top:10px;
+}
 /* ************************************ */
 
 /* Formating jonathan cell ↓↓↓↓*/
@@ -92,7 +95,7 @@ img {
 }
 
 /* Make all header(Contains the image and name) to be flex */
-header {
+.header {
     display: flex;
 }
 
@@ -104,31 +107,32 @@ div>* {
 
 }
 
-/* Determines font weight and size of paragraphs(Comments of persons) inside aside section*/
-aside>p {
+/* Determines font weight and size of paragraphs(Comments of persons) inside aside div*/
+.aside p {
     font-size: 18px;
     font-weight: 600;
 
 }
 
-article {
+.article {
     font-size: 13px;
+    padding: 10px 15px;
 }
 
-/* Change the formating of section(grid), and cells(main tag), 
+/* Change the formating of main(grid), and cells(section tag), 
 and align pattern-quotation icon when width is less or equal 374px*/
 @media screen and (max-width:374px) {
     body{
         width:374px;
     }
-    section {
+    main {
         width:90%;
         margin:15% 20px;
         display: block;
 
     }
 
-    main {
+    section {
         margin-bottom: 25px;
     }
 
@@ -142,14 +146,14 @@ and align pattern-quotation icon when width is less or equal 374px*/
     body{
         width:480px;
     }
-    section {
+    main {
         width:90%;
         margin:10% 20px;
         display: block;
 
     }
 
-    main {
+    section {
         margin-bottom: 25px;
     }
 
