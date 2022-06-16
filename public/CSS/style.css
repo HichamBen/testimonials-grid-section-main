@@ -1,18 +1,19 @@
 * {
     box-sizing: border-box;
 }
+
 body {
+    width: 100%;
     margin: 0;
     background-color: hsl(210, 46%, 95%);
     font-family: 'Barlow Semi Condensed', sans-serif;
     height: 875px;
-    width:1440px;
 }
 
 /* Make the main to be gird with 2 rows/ 4 columns*/
 main {
     width: 80%;
-    margin: 12%;
+    margin: 12% auto;
     display: grid;
     grid-template: auto auto/ repeat(4, minmax(270px, 25%));
     grid-gap: 25px;
@@ -48,8 +49,9 @@ svg {
 }
 
 .aside {
-    padding-top:10px;
+    padding-top: 10px;
 }
+
 /* ************************************ */
 
 /* Formating jonathan cell ↓↓↓↓*/
@@ -122,12 +124,13 @@ div>* {
 /* Change the formating of main(grid), and cells(section tag), 
 and align pattern-quotation icon when width is less or equal 374px*/
 @media screen and (max-width:374px) {
-    body{
-        width:374px;
+    body {
+        width: 374px;
     }
+
     main {
-        width:90%;
-        margin:15% 20px;
+        width: 90%;
+        margin: 15% 20px;
         display: block;
 
     }
@@ -143,12 +146,13 @@ and align pattern-quotation icon when width is less or equal 374px*/
 }
 
 @media screen and (max-width:480px) and (min-width:375px) {
-    body{
-        width:480px;
+    body {
+        width: 480px;
     }
+
     main {
-        width:90%;
-        margin:10% 20px;
+        width: 90%;
+        margin: 10% 20px;
         display: block;
 
     }
